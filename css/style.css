@@ -1,0 +1,23 @@
+p
+{   
+    border-radius: 10px;
+    background: #423b2d;
+    padding: 10px;
+    font-size: 25px;
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+}
+
+h1
+{
+    text-align: center;
+
+    border-style: solid;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-size: 100px;
+    margin: 10px;
+}
+
+body
+{
+    background-image: url(/img/coverlink.jpg);
+}
