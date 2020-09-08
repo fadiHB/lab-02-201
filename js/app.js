@@ -1,4 +1,4 @@
-'use strict';
+// // 'use strict';
 
 var userName = prompt('welcome, what is you name ?');
 alert('Nice to meet you ' + userName);
@@ -76,26 +76,72 @@ default:
 }
 
 
+alert('Lets play another game');
+alert('you have to guess my number, its between 0 and 10');
+alert('Enter the number in the next prompt');
+
+var userGuess = prompt();
+var myNumber = 0;
+
+
+while ( userGuess>10)
+{
+  alert (' You should type a number between 0 and 10');
+  userGuess = prompt();
+
+}
+
+
+for (var i = 0; i <= 3; i++)
+{
+  if (userGuess === myNumber)
+  { alert('You are a charm ,thats Right !!'); break; }
+
+  else if(10>=userGuess >4) {
+    alert('thats wrong,thats high,Tray again.now you have onle'+ (4-i) +'chances');
+    userGuess = prompt();
+  }
+  else if( 4>= userGuess >=1) {
+    alert('thats wrong,thats low,Tray again.now you have onle'+ (4-i) +'chances');
+    userGuess = prompt();
+  }
+}
 alert ('gald to see you ' + userName + ' again ');
+alert('Dont go away ..there is another game ');
+alert('can you gues the right answer');
+alert('what is bal bla bla?');
+alert('A -> Z');
 
+var userAnswer = prompt();
 
+var answers = ['A','B','C','D'];
 
+for ( var j = 0 ; j <= 5 ; j++ )
+{
+  for ( var k=0 ; k!==answers.length ;k++ )
+  {
 
+    if ( userAnswer !== answers[k] )
+    {
 
+      alert('Wrong,Tray again , you just have ${6-j} times to try');
+      userAnswer = prompt();
+      break;
 
+    }
 
+    else
+    {
+      alert('you are right');
+      j =5;
+      break;
 
+    }
 
+  }
 
+  break;
 
+}
 
-
-
-
-
-
-
-
-
-
-
+alert('the Right Answers A B C D and E');
