@@ -1,5 +1,5 @@
-// // 'use strict';
-
+// 'use strict';
+var userPoint = 0;
 var userName = prompt('welcome, what is you name ?');
 alert('Nice to meet you ' + userName);
 
@@ -9,6 +9,7 @@ if(fatherName.toUpperCase()==='Y')
 {
   alert('you are a charm');
   console.log('you are right');
+  userPoint++;
 }
 else
 {
@@ -22,6 +23,7 @@ if (favFood.toUpperCase() === 'Y' )
 {
   alert('so that, I love you');
   console.log('you are right');
+  userPoint++;
 }
 else
 {
@@ -36,6 +38,7 @@ if (favGame.toUpperCase() === 'Y')
 {
   alert('Every one know that');
   console.log('you are right');
+  userPoint++;
 }
 else
 {
@@ -49,6 +52,7 @@ switch (jaz.toUpperCase()) {
 case 'Y':
   alert('you are amazing like me');
   console.log('you are right');
+  userPoint++;
 
   break;
 
@@ -66,6 +70,7 @@ switch (page.toUpperCase())
 case 'Y':
   alert('Thank you');
   console.log('you are right');
+  userPoint++;
 
   break;
 
@@ -81,8 +86,6 @@ alert('you have to guess my number, its between 0 and 10');
 alert('Enter the number in the next prompt');
 
 var userGuess = prompt();
-var myNumber = 0;
-
 
 while ( userGuess>10)
 {
@@ -91,17 +94,20 @@ while ( userGuess>10)
 
 }
 
+var myNumber = 0;
 
 for (var i = 0; i <= 3; i++)
 {
-  if (userGuess === myNumber)
-  { alert('You are a charm ,thats Right !!'); break; }
+  if (myNumber === userGuess )
+  {
+    alert('You are a charm ,thats Right !!');
+    userPoint++; break;
 
-  else if(10>=userGuess >4) {
+  } else if(10>=userGuess >4) {
     alert('thats wrong,thats high,Tray again.now you have onle'+ (4-i) +'chances');
     userGuess = prompt();
-  }
-  else if( 4>= userGuess >=1) {
+
+  } else {
     alert('thats wrong,thats low,Tray again.now you have onle'+ (4-i) +'chances');
     userGuess = prompt();
   }
@@ -117,14 +123,14 @@ var userAnswer = prompt();
 var answers = ['A','B','C','D'];
 
 for ( var j = 0 ; j <= 5 ; j++ )
-{
+{ console.log('pass loop1');
   for ( var k=0 ; k!==answers.length ;k++ )
-  {
+  { console.log('pass loop1');
 
     if ( userAnswer !== answers[k] )
     {
 
-      alert('Wrong,Tray again , you just have ${6-j} times to try');
+      alert('Wrong,Tray again , you just have ' + (6-j) + ' times to try');
       userAnswer = prompt();
       break;
 
@@ -133,15 +139,13 @@ for ( var j = 0 ; j <= 5 ; j++ )
     else
     {
       alert('you are right');
+      userPoint++;
       j =5;
       break;
 
     }
-
   }
-
-  break;
-
 }
 
-alert('the Right Answers A B C D and E');
+alert('the Right Answers was A B C D and E');
+alert('your totally points is'+userPoint );
