@@ -115,8 +115,7 @@ for (var i = 0; i <= 3; i++)
 alert ('gald to see you ' + userName + ' again ');
 alert('Dont go away ..there is another game ');
 alert('can you gues the right answer');
-alert('what is bal bla bla?');
-alert('A -> Z');
+alert('from A to Z ,4 there are 4 letters are right4 letter is right ');
 
 var userAnswer = prompt();
 
