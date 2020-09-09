@@ -11,3 +11,6 @@ There are 7 Questions that the user have to answer it
 the user will get a point for every right answer
 
 and the end he will know the result out of 7
+
+I was Navigator on: my repo
+I was Driver on: Rania's repo
