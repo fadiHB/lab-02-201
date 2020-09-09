@@ -1,5 +1,6 @@
 'use strict';
 
+console.log('Gi')
 
 function Q()
 {
