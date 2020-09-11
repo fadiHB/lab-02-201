@@ -1,23 +1,68 @@
-p
+
+
+ .cover image
+{
+    position: absolute;
+    border-radius: 30px;
+    top: 0px;
+
+} 
+
+#profile
+{   position: absolute;
+    left:100px;
+    top: 200px;
+}
+
+
+#nav-list
 {   
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    background-color: rgb(10, 34, 34);
+
+
+}
+
+div nav a
+{   font-size: 30px;
+    padding: 30px;
+    color: wheat;
+    float: right ;
+    text-decoration:none;
+
+   
+}
+
+
+section
+{
+    top: 50px;
+    position: relative;
+}
+
+.art
+{
+    width: 45%;
+    height: auto;
     border-radius: 10px;
     background: #423b2d;
-    padding: 10px;
     font-size: 25px;
     box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
-}
-
-h1
-{
-    text-align: center;
-
-    border-style: solid;
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-    font-size: 100px;
+    padding: 10px;
     margin: 10px;
+    float: left;
+    font-size:xx-large ;
+    font-weight: 900px;
+
+
 }
 
-body
+/* body
 {
-    background-image: url(/img/coverlink.jpg);
-}
+    background-image: url(/img/BG.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+} */
