@@ -1,6 +1,6 @@
 'use strict';
 
-
+// all Big function
 function Q() {
   var userGuess;
 
